@@ -1,7 +1,11 @@
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*eslint-env browser*/
+/*eslint 'no-console': 0*/
+
 //de hartjesknop selecteren
-var likeButton = document.getElementById('like-button');
-//even testen!
-console.log('likeButton');
+var likeButton = document.querySelector('#like-button')
 
 //als je op het hartje klikt dan verandert het in een gevuld/leeg hartje
 function hartjeLiken() {
@@ -15,7 +19,7 @@ function hartjeLiken() {
     }
 }
 
-likeButton.addEventListener('onclick', hartjeLiken);
-
+likeButton.addEventListener("click", hartjeLiken);
 
 //als je op het hartje klikt komt er een +1 te staan
+
