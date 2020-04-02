@@ -161,19 +161,31 @@ article a {
 
 }
 
-/* liken */
+/* favoriet knop */
 
-i {
-    color: #FF3268;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    font-size: 1.75em;
-    margin-left: 38%;
+button {
+    font-family: "Nexa bold";
+    font-size: 1.2rem;
+    margin-left: 250px;
+    color: white;
+    background-color: #FF3268;
+    border-radius: 40px;
+    box-shadow:1px 2px 0px #ca2b55;
+    max-width: 100%;
+    padding: 0.8em;
+    text-align: center;
+    white-space: nowrap;
+    transition-duration: 0.4s;
 }
 
-i:hover {
-    color: #2800a0;
+button:hover {
+    background-color: #ca2b55;
+}
+
+button.clicked {
+    content: "Opgeslagen";
+}
+
 }
 
 /* footer */

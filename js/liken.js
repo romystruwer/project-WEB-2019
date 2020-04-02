@@ -4,22 +4,12 @@
 /*eslint-env browser*/
 /*eslint 'no-console': 0*/
 
-//de hartjesknop selecteren
-var likeButton = document.querySelector('#like-button')
+//de knop selecteren
+var button = document.querySelector("button");
 
-//als je op het hartje klikt dan verandert het in een gevuld/leeg hartje
-function hartjeLiken() {
-    console.log('koe');
-    if(likeButton.classList.contains("far")){
-        likeButton.classList.remove("far");
-        likeButton.classList.add("fas");
-    } else {
-        likeButton.classList.remove("fas");
-        likeButton.classList.add("far");
-    }
-}
+//als je op de button klikt komt de div tevoorschijn!
+button.addEventListener("click", function() {
+    element.classList.toggle("clicked");
+});
 
-likeButton.addEventListener("click", hartjeLiken);
-
-//als je op het hartje klikt komt er een +1 te staan
 
