@@ -182,8 +182,12 @@ button:hover {
     background-color: #ca2b55;
 }
 
-button.clicked {
-    content: "Opgeslagen";
+li:nth-last-child(2) {
+  transition-duration: 0.4s;
+}
+
+li:nth-last-child(2).opgeslagen {
+  content: "+1";
 }
 
 }

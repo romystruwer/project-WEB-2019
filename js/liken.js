@@ -6,10 +6,11 @@
 
 //de knop selecteren
 var button = document.querySelector("button");
+var element = document.querySelector("li:nth-last-child(2)");
 
 //als je op de button klikt kiest hij class = .clicked
 button.addEventListener("click", function() {
-    element.classList.toggle("clicked");
+    element.classList.toggle(".opgeslagen");
 });
 
 
