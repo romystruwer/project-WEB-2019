@@ -182,14 +182,15 @@ button:hover {
     background-color: #ca2b55;
 }
 
-li:nth-last-child(2) {
-  transition-duration: 0.4s;
+button.saved {
+    content: 'Opgeslagen';
 }
 
+li:nth-last-child(2){
+    transition-duration: 0.4s;
+}
 li:nth-last-child(2).opgeslagen {
-  content: "+1";
-}
-
+    Background-color: Black;
 }
 
 /* footer */
