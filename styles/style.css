@@ -140,6 +140,8 @@ header time {
 
 article footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 0.7em;
 
@@ -164,9 +166,10 @@ article a {
 /* favoriet knop */
 
 button {
+    display: flex;
+    flex-direction: row;
     font-family: "Nexa bold";
     font-size: 1.2rem;
-    margin-left: 250px;
     color: white;
     background-color: #FF3268;
     border-radius: 40px;
@@ -182,16 +185,27 @@ button:hover {
     background-color: #ca2b55;
 }
 
-button.saved {
-    content: 'Opgeslagen';
+li:nth-last-child(2){
+    position: relative;
 }
 
-li:nth-last-child(2){
-    transition-duration: 0.4s;
+li:nth-last-child(2):after{
+    content: "";
+    width: .5em;
+    height: .5em;
+    background-color: #FF3268;
+    position: absolute;
+    top: -.25em;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    border-radius: 50%;
 }
-li:nth-last-child(2).opgeslagen {
-    Background-color: Black;
+
+li:nth-last-child(2).opgeslagen:after {
+    opacity: 1;
 }
+
 
 /* footer */
 
